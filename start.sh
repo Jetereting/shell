@@ -6,4 +6,5 @@ echo "start $app"
 #script_dir=$(cd "$(dirname $0)";pwd)/
 # 执行目录
 script_dir=$(pwd)/
+chmod +x ${script_dir}${app}
 nohup ${script_dir}${app} $2 > ${script_dir}${app}.out 2>&1 &
