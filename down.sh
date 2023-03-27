@@ -2,7 +2,7 @@
 set -e;
 curl -o tmp_git_shell.zip https://ghproxy.com/https://github.com/Jetereting/shell/archive/main.zip
 unzip -o -d tmp_git_shell  tmp_git_shell.zip
-cd tmp_git_shell/shell-main
+mkdir tmp_git_shell;cd tmp_git_shell/shell-main
 shells=`ls | grep .sh | tr "\n" " "`;
 chmod +x `echo $shells`;
 sudo mv `echo $shells` /usr/local/bin;
