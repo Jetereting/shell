@@ -13,4 +13,4 @@ function pwdx2 {
 pids=`ps -ef | grep $app | grep -v 'cd\|grep\|tail\|echo\|stop.sh'| awk '{print $2}' | while read line; do pwdx2 $line; done`
 # 在后面拼接 /
 pids=`echo "$pids" | awk '{print $0"/"}'`
-echo "$pids" | grep -e "${script_dir}$" | cut -d':' -f1 | while read line; do kill $line; done;
+echo "$pids" | grep -e "${script_dir}$" | cut -d':' -f1 | while read line; do kill -9 $line; done;
