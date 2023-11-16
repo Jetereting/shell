@@ -1,3 +1,4 @@
+# docker run 需要参数：--privileged=true -v $(PWD)/data/tailscale:/var/lib/tailscale -v $(PWD)/data/tailscale:/dev/net
 curl -O https://pkgs.tailscale.com/stable/tailscale_1.52.1_amd64.tgz;
 tar zxvf tailscale_1.52.1_amd64.tgz
 cp tailscale_1.52.1_amd64/tailscaled /usr/sbin/tailscaled;
