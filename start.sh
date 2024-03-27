@@ -1,7 +1,7 @@
 # 通用启动脚本
 # 启动执行目录下的某个应用 例如：cd xxx;start.sh test '-c conf/conf.yaml'
+echo "start $1 $2"
 app=$1
-echo "start $app $2"
 # 脚本目录
 #script_dir=$(cd "$(dirname $0)";pwd)/
 # 执行目录
