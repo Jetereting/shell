@@ -6,4 +6,4 @@ echo "start $@"
 # 执行目录
 script_dir=$(pwd)/
 chmod +x ${script_dir}$1
-nohup ${script_dir}$@ > ${script_dir}$1.out 2>&1 &
+nohup ${script_dir}$@ >> ${script_dir}$1.out 2>&1 &
